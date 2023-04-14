@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loadedFeature = 'recipe';
+
   title = 'ng4-complete-guide';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
